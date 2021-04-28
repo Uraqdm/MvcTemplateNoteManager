@@ -51,7 +51,7 @@ namespace MvcTemplateNoteManager.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Date")] Note note)
+        public async Task<IActionResult> Create([Bind("Id,Name,Description,Date")] Note note)
         {
             if (ModelState.IsValid)
             {
@@ -83,7 +83,7 @@ namespace MvcTemplateNoteManager.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Date")] Note note)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Date")] Note note)
         {
             if (id != note.Id)
             {
