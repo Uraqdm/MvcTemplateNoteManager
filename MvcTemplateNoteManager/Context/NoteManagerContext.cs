@@ -8,6 +8,5 @@ namespace MvcTemplateNoteManager.Context
         public NoteManagerContext(DbContextOptions options) : base(options) { }
 
         public DbSet<Note> Notes { get; set; }
-        public DbSet<Models.Task> Tasks { get; set; }
     }
 }

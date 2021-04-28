@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MvcTemplateNoteManager.Context;
 
 namespace MvcTemplateNoteManager.Migrations
 {
     [DbContext(typeof(NoteManagerContext))]
-    partial class NoteManagerContextModelSnapshot : ModelSnapshot
+    [Migration("20210428091201_TaskModelRemoving")]
+    partial class TaskModelRemoving
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

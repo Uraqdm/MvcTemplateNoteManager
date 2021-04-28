@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace MvcTemplateNoteManager.Models
 {
@@ -7,7 +6,7 @@ namespace MvcTemplateNoteManager.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public List<Models.Task> Tasks { get; set; }
+        public string Description { get; set; }
         public DateTime Date { get; set; }
     }
 }
